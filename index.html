@@ -1,1 +1,74 @@
 <!-- start -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week3</title>
+ </head>
+ <body>
+    <script>
+        function getMessage(name) {
+            return `Hello, ${name} ...`;
+        }
+
+        const message = getMessage('My World');
+        document.write(message);
+
+        // 콜백 함수 
+        //function displayDone() {
+        //    console.log('Done!');
+        //}
+
+        // 즉시 실행
+        //setTimeout(displayDone(), 3000);
+
+        // 2초 후 실행
+        //setTimeout(displayDone, 3000);
+
+        // 익명 함수
+        //setTimeout (
+        //   function() {
+        //        console.log('Done!');
+        //    },
+        //    3000
+        //)
+
+        // 화살표 함수
+        //setTimeout(
+        //    () => {
+        //        console.log('Done!');
+        //    },
+        //   3000
+        //)
+
+        setTimeout(
+            () => {document.write('My Name is Soojin')},
+            3000
+        )
+
+        setTimeout(
+            () => {
+                document.write(' Nice to Meet you')  
+            },
+            6000
+        )
+
+        setTimeout(
+            () => {
+                document.write(' :)')  
+            },
+            9000
+        )
+
+        setTimeout(
+            () => {
+                document.write(' Good Bye ~.~')  
+            },
+            12000
+        )
+
+        setInterval(() => console.log(new Date()), 2000);
+    </script>
+ </body>
+ </html>
