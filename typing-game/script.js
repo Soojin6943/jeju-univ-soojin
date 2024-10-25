@@ -17,6 +17,7 @@ const quotes = [
     const quoteElement = document.getElementById('quote');
     const messageElement = document.getElementById('message');
     const typedValueElement = document.getElementById('typed-value');
+    const startButton = document.getElementById('start');
 
     document.getElementById('start').addEventListener('click', onClickFunction)
     
@@ -50,6 +51,8 @@ const quotes = [
         // 타이핑 시작 시간 기록
         startTime = new Date().getTime();
 
+        startButton.disabled = true;
+
     
 
     };
@@ -70,6 +73,7 @@ const quotes = [
             messageElement.innerText = message;
 
             typedValueElement.disabled = true;
+            startButton.disabled = false;
             // 입력된 값이 공백으로 끝났는지와 공백을 제거한 값이 현재 단어와 일치하는 지 확인
         } else if (typedValue.endsWith(' ') && typedValue.trim() === currentWord) {
             // 입력 필드 초기화하여 다음 단어 입력 준비
