@@ -12,57 +12,61 @@
     <body>
         <h1>My Terrarium</h1>
         <div id="page">
-            <div id="left-container" class="container">
-                <div class="plant-holder">
+            <!-- ondrop 요소가 드롭될 때 실행될 함수 -->
+            <!-- ondragover 드래그 요소가 위에 있을 때 드롭 허용을 위한 함수 -->
+            <div id="left-container" class="container" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <!-- draggable 요소를 드래그 가능하게 만드는 속성 -->
+                <!-- ondragstart 드래그가 시작될 때 실행될 함수 -->
+                <div class="plant-holder" id="holder1" draggable="true" ondragstart="drag(event)">
                     <img class="plant" alt="plant" id="plant1" src="./images/plant1.png" />
                 </div>
-                <div class="plant-holder">
+                <div class="plant-holder" id="holder2" draggable="true" ondragstart="drag(event)">
                     <img class="plant" alt="plant" id="plant2" src="./images/plant2.png" />
                 </div>
-                <div class="plant-holder">
+                <div class="plant-holder" id="holder3" draggable="true" ondragstart="drag(event)">
                     <img class="plant" alt="plant" id="plant3" src="./images/plant3.png" />
                 </div>
-                <div class="plant-holder">
+                <div class="plant-holder" id="holder4" draggable="true" ondragstart="drag(event)">
                     <img class="plant" alt="plant" id="plant4" src="./images/plant4.png" />
                 </div>
-                <div class="plant-holder">
+                <div class="plant-holder" id="holder5" draggable="true" ondragstart="drag(event)">
                     <img class="plant" alt="plant" id="plant5" src="./images/plant5.png" />
                 </div>
-                <div class="plant-holder">
+                <div class="plant-holder" id="holder6" draggable="true" ondragstart="drag(event)">
                     <img class="plant" alt="plant" id="plant6" src="./images/plant6.png" />
                 </div>
-                <div class="plant-holder">
+                <div class="plant-holder" id="holder7" draggable="true" ondragstart="drag(event)">
                     <img class="plant" alt="plant" id="plant7" src="./images/plant7.png" />
                 </div>
             </div>
-            <div id="right-container" class="container">
-                <div class="plant-holder">
+            <div id="right-container" class="container" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="plant-holder" id="holder8" draggable="true" ondragstart="drag(event)">
                     <img class="plant" alt="plant" id="plant8" src="./images/plant8.png" />
                 </div>
-                <div class="plant-holder">
+                <div class="plant-holder" id="holder9" draggable="true" ondragstart="drag(event)">
                     <img class="plant" alt="plant" id="plant9" src="./images/plant9.png" />
                 </div>
-                <div class="plant-holder">
+                <div class="plant-holder" id="holder10" draggable="true" ondragstart="drag(event)">
                     <img class="plant" alt="plant" id="plant10" src="./images/plant10.png" />
                 </div>
-                <div class="plant-holder">
+                <div class="plant-holder" id="holder11" draggable="true" ondragstart="drag(event)">
                     <img class="plant" alt="plant" id="plant11" src="./images/plant11.png" />
                 </div>
-                <div class="plant-holder">
+                <div class="plant-holder" id="holder12" draggable="true" ondragstart="drag(event)">
                     <img class="plant" alt="plant" id="plant12" src="./images/plant12.png" />
                 </div>
-                <div class="plant-holder">
+                <div class="plant-holder" id="holder13" draggable="true" ondragstart="drag(event)">
                     <img class="plant" alt="plant" id="plant13" src="./images/plant13.png" />
                 </div>
-                <div class="plant-holder">
+                <div class="plant-holder" id="holder14" draggable="true" ondragstart="drag(event)">
                     <img class="plant" alt="plant" id="plant14" src="./images/plant14.png" />
                 </div>
             </div>
         </div>
 
-        <div id="terrarium">
+        <div id="terrarium" ondrop="drop(event)" ondragover="allowDrop(event)">
             <div class="jar-top"></div>
-            <div class="jar-walls">
+            <div class="jar-walls" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="jar-glossy-long"></div>
                 <div class="jar-glossy-short"></div>
             </div>
