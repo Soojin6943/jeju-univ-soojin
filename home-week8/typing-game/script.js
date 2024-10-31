@@ -50,6 +50,9 @@ const quotes = [
         }
     }
 
+    // 페이지 로드 시 최고 점수 표기되게
+    initBestScore();
+
     document.getElementById('start').addEventListener('click', onClickFunction)
     
     function onClickFunction() {
@@ -100,14 +103,27 @@ const quotes = [
         if (typedValue === currentWord && wordIndex === words.length - 1) {
             // 타이핑에 소요된 시간 계산
             const elapsedTime = new Date().getTime() - startTime;
+            // 점수(소수점 둘째자리까지)
+            const currentScore = (elapsedTime/1000).toFixed(2);
 
+            // 최고 점수 업데이트
+            const bestScore = localStorage.getItem('bestScore');
+            if (!bestScore || parseFloat(currentScore) < parseFloat(bestScore)) {
+                localStorage.setItem('bestScore', currentScore);
+                bestScoreElement.textContent = `최고 기록: ${currentScore}초`;
 
-            // 타이핑 완료 메시지
-            const message = `CONGRATULATIONS! You finished in ${elapsedTime/1000} seconds.`;
+                // 신기록 축하 메세지
+                const message = `축하합니다!! 신기록 달성!\n${currentScore}초`;
+                modalPopup.querySelector('h3').textContent = '🎉 새로운 기록! 🎉';
 
-            // 모달 내용 업데이트
-            modalPopup.querySelector('h3').textContent = '게임 완료!';
-            modalPopup.querySelector('p').textContent = message;
+                modalPopup.querySelector('p').textContent = message;
+
+            } else {
+                const message = `완료 시간: ${currentScore}초\n최고 기록: ${bestScore}초`;
+                modalPopup.querySelector('h3').textContent = '게임 완료!';
+
+                modalPopup.querySelector('p').textContent = message;
+            }
 
             typedValueElement.value = '';
             messageElement.innerText = '';
