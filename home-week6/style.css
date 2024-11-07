@@ -40,15 +40,28 @@ body {
     position: absolute;
     height: 100%;
     padding: 10px;
+    /* 컨테이너의 최소 높이 설정으로 드롭 영역 확보 */
+    min-height: 100px; 
 }
 
 .plant-holder {
     position: relative;
     height: 13%;
 
+    cursor: move;
+    user-select: none;
 }
+
+.plant-holder.dragging {
+    /* css 반투명 효과 (드래그 시) */
+    opacity: 0.5; 
+}
+.plant-holder:hover .plant {
+    transform: scale(1.05);  /* 1.1에서 1.05로 축소하여 커지는 정도를 줄임 */
+}
+
 .plant {
-    position: absolute;
+    position: relative;
     max-width: 100%;
     max-height: 100%;
     z-index: 2;
@@ -56,10 +69,15 @@ body {
     object-fit: contain;
 }
 
-
+#terrarium {
+    /* 테라리움의 최소 높이 설정으로 드롭 영역 확보 */
+    min-height: 200px; 
+}
 
 
 .jar-walls {
+    position: relative;
+    overflow: visible;
     height: 80%;
     width: 60%;
     background: #d1e1df;
