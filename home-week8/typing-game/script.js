@@ -6,9 +6,21 @@ const quotes = [
     //     'What one man can invent another can discover.',
     //     'Nothing clears up a case so much as stating it to another person.',
     //     'Education never ends, Watson. It is a series of lessons, with the greatest for the last.',
-        'test 1',
-        'test 2',
-        'test 3'
+        '그대가 꺾어준 꽃 시들 때까지 들여다보았네 그대가 남기고 간 시든 꽃 다시 필 때까지',
+        '얼굴 하나야 손가락 둘로 푹 가리지만 보고 싶은 마음 호수만 하니 눈 감을 수밖에',
+        '자세히 보아야 예쁘다 오래 보아야 사랑스럽다 너도 그렇다', 
+        '연탄재 함부로 발로 차지 마라 너는 누구에게 한 번이라도 뜨거운 사람이었느냐',
+        '죽는 날까지 하늘을 우러러 한 점 부끄럼이 없기를',
+        '가장 넓은 길은 언제나 내 마음속에',
+        '나의 꿈은 맑은 바람이 되어',
+        '넓은 하늘로의 비상을 꿈꾸며',
+        '많고 많은 사람 중에 그대 한 사람',
+        '너무 맑고 초롱한 그중 하나 별이여',
+        '그대만큼 사랑스러운 사람을 본 일이 없다',
+        '사람이 온다는 건 실은 어마어마한 일이다',
+        '흙에서 자란 내 마음 파란 하늘빛',
+        '밝은 마음으로 오늘을 열어 가자',
+        '넓음과 깊음을 가슴에 채우며',
     ];
     
     // let 은 고정값이 아니라서 사용
