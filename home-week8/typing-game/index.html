@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>티니핑 말고 타이핑!</title>
+    <!-- css 없이 먼저 html 생성 막기위해 제일 위? -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>티니핑 말고 타이핑!</h1>
+    <p>유명 시 문구와 수능 필적환인란 문구를 타이핑해보세요. **start** 버튼을 누르면 시작됩니다!</p>
+    <p id="best_score">최고기록: 아직 기록이 없습니다</p>
+    <p id="quote"></p>
+    <p id="message"></p>
+
+    <!-- 모달 팝업 -->
+    <div class="modal">
+        <div class="modal_popup">
+            <h3> 게임 완료! </h3>
+            <p>내용</p>
+            <button type="button" class="modal_close_btn">다시 게임하기</button>
+        </div>
+    </div>
+    <!-- 모달 팝업 end -->
+
+    <div id="game">
+        <input type="text" aria-label="current word" id="typed-value" />
+        <button type="button" id="start">Start</button>
+    </div>
+    <!-- Dom 부터 실행되야 js가 찾아가니깐 js가 제일 아래 -->
+    <script src="script.js"></script>
+</body>
+</html>
