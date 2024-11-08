@@ -1,10 +1,12 @@
 {
     "manifest_version": 3,
     "name": "Carbon Trigger Extension",
-    "version": "1.0.0",
-    "description": "Carbon Trigger Browser Extension",
+    "version": "0.1.0",
+    "host_permissions": ["<all_urls>"],
+    "background": {
+      "service_worker": "dist/background.js"
+    },
     "action": {
       "default_popup": "dist/index.html"
-    },
-    "permissions": []
+    }
   }
