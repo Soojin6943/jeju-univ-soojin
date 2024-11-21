@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "오늘의 조언",
+  "version": "0.1.0",
+  "description": "Advice Slip API를 활용하여 랜덤 조언을 제공합니다.",
+  "action": {
+      "default_popup": "popup.html"
+  },
+  "permissions": [
+      "activeTab"
+  ]
+}
