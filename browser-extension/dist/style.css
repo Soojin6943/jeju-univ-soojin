@@ -75,7 +75,7 @@ h2 {
 } */
 
 .result {
-    display: none;
+    /* display: none; */
 }
 
 button {
@@ -88,6 +88,10 @@ button {
     color: #ffffff;
 }
 
+.clear-btn {
+    position: relative;
+    justify-content: center;
+}
 
 @media (prefers-color-scheme: dark) {
 body {
@@ -110,3 +114,4 @@ label {
     color: white
 }
 }
+
